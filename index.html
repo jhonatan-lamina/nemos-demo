@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo - NEMOS v3.0</title>
+    <link rel="shortcut icon" href="./img/icon.webp">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="particles-js" id="particles-js"></div>
+    <header>
+        <h1 class="h1">
+            <a href="https://sotepro.com/producto/herramienta-de-monitoreo-de-red/" target="_blank" title="Click to buy the Product">
+                NETWORK MONITORING SYSTEM
+            </a>
+        </h1>
+        <h2>SERVER: </h2><h2 id="server">*PAGES.GITHUB.COM*</h2><br/>
+        <h2>UPDATED ON: </h2><h2 id="updated">*DEMO VERSION*</h2><br>
+        <button onclick="window.open('https://sotepro.com/producto/herramienta-de-monitoreo-de-red/', '_blank');">BUY PRODUCT (Comprar Producto)</button>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>Internet</h1>
+                    <h2>cloud.mikrotik.com</h2>
+                </div>
+                <div class="img">
+                    <a href="https://mikrotik.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>DNS</h1>
+                    <h2>8.8.8.8</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>Search</h1>
+                    <h2>216.58.210.163</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>Facebook</h1>
+                    <h2>www.facebook.com</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.facebook.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>YouTube</h1>
+                    <h2>www.youtube.com</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.youtube.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>Gateway</h1>
+                    <h2>192.168.100.1</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>Server</h1>
+                    <h2>192.168.100.100</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>User 01</h1>
+                    <h2>192.168.100.150</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>User 02</h1>
+                    <h2>192.168.100.151</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>BUY</h1>
+                    <h2>PRODUCT</h2>
+                </div>
+                <div class="img">
+                    <a href="https://sotepro.com/producto/herramienta-de-monitoreo-de-red/" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+        </div>
+        <button id="floating-button">MENU</button>
+        <div class="floating-menu">
+          <ul>
+            <li><a href="https://sotepro.com/producto/herramienta-de-monitoreo-de-red/" target="_blank">BUY (Comprar)</a></li>
+            <li><a href="https://sotepro.com/producto/herramienta-de-monitoreo-de-red/" target="_blank">EDIT (Editar)</a></li>
+            <li><a href="https://sotepro.com/producto/herramienta-de-monitoreo-de-red/" target="_blank">LOGOUT (Cerrar Sesión)</a></li>
+            <li><a href="https://sotepro.com/producto/herramienta-de-monitoreo-de-red/" target="_blank">ABOUT (Acerca De)</a></li>
+          </ul>
+        </div>
+        <div class="hide_background" id="hide_background" onclick="close_popup()"></div>
+        <div id="msg_popup" class="msg_popup">
+            <div class="msg-content">
+                <span class="close" onclick="close_popup()">&times;</span>
+                <img src="./img/alert.svg" alt="img">
+                <h1>WARNING</h1>
+                <h2>This is just a Demo Version of the Network Monitoring System, the data shown may not be real</h2><br>
+                <h1>ADVERTENCIA</h1>
+                <h2>Esta es solo una Versión Demo del Sistema de Monitoreo de Red, los datos mostrados pueden no ser reales</h2><br>
+                <button class="close_popup" onclick="close_popup()">CLOSE (Cerrar)</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/particles.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </main>
+</body>
+</html>

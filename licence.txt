@@ -1,0 +1,29 @@
+>> LICENSE FOR ALL FILES WITHOUT ANY EXCEPTION <<
+Author: Jhonatan Lamina
+Web: www.sotepro.com
+Mail: jhonatan.lamina@sotepro.com
+License Type: Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+Description:
+This work with all its attachments is under a Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License.
+
+You are free to:
+1. Modify: Have the source code available to modify it in the future for your own use.
+
+The licensor cannot revoke these freedoms as long as you follow the terms of the license.
+Under the following terms:
+
+1. Attribution (BY): You must appropriately give credit, provide a link to the license. You can do it in any reasonable way,
+                     but not in a way that suggests that you or your use have the endorsement of the licensor.
+
+2. Non-Commercial (NC): You may not use the material for commercial purposes.
+
+3. NoDerivatives (ND): If you remix, transform, or build from the material, you will not be able to distribute the modified material.
+
+4. Additional restrictions: You cannot apply legal terms or technological measures that legally restrict others to do
+                            any use permitted by the license.
+
+5. Third Party Rights: This work with all its attachments does not include third party files because it would violate
+                       the rights of the respective authors.
+
+For more information visit: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es
