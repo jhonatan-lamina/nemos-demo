@@ -1,5 +1,5 @@
-NEMOS DEMO v3.0
-Updated on: 19/09/2024
+NEMOS DEMO v3.1
+Updated on: 10/10/2024
 
 This is a demo version that does not have all the monitoring, security and configuration features.
 
@@ -11,8 +11,8 @@ https://sotepro.com
 
 ------------------------------------------------------------------------------------------------------------------
 
-NEMOS DEMO v3.0
-Actualizado el: 19/09/2024
+NEMOS DEMO v3.1
+Actualizado el: 10/10/2024
 
 Esta es una version de demostración que no posee todas las caractersiticas de monitoreo, seguridad y configuración.
 
