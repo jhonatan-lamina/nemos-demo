@@ -3,31 +3,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DEMO - NEMOS v4.0</title>
+    <title>DEMO - NEMOS v5.1</title>
     <link rel="shortcut icon" href="./img/icon.webp">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
     <div class="particles-js" id="particles-js"></div>
     <header>
-        <h1>10-11-2025 12:00:00</h1><br>
-        <button onclick="window.open('https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/', '_blank');">BUY PRODUCT (Comprar Producto)</button>
+        <button id="menu_button"></button>
+        <h1>18/02/2026 12:00:00</h1>
+        <span>OFFLINE: 13 | ONLINE: 12</span>
     </header>
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">⌦ UPDATE</a></li>
+            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">⌦ DATABASE</a></li>
+            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">⌦ FILES</a></li>
+            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">⌦ SETTINGS</a></li>
+            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">⌦ ABOUT</a></li>
+            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">⌦ BUY PRODUCT</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="container">
             <div class="flex-box" style="border: 3px solid green;">
                 <div class="title">
-                    <h1>Internet</h1>
-                    <h2>cloud.mikrotik.com</h2>
+                    <h1>ISP 1</h1>
+                    <h2>181.45.123.67:8291</h2>
                 </div>
                 <div class="img">
-                    <a href="https://mikrotik.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>ISP 2</h1>
+                    <h2>200.58.112.34:8291</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
                 </div>
             </div>
             <div class="flex-box" style="border: 3px solid green;">
                 <div class="title">
                     <h1>DNS</h1>
-                    <h2>8.8.8.8</h2>
+                    <h2>8.8.8.8:53</h2>
                 </div>
                 <div class="img">
                     <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
@@ -35,8 +55,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid green;">
                 <div class="title">
-                    <h1>Search</h1>
-                    <h2>216.58.210.163</h2>
+                    <h1>GOOGLE</h1>
+                    <h2>216.58.210.163:443</h2>
                 </div>
                 <div class="img">
                     <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
@@ -44,8 +64,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid green;">
                 <div class="title">
-                    <h1>Facebook</h1>
-                    <h2>www.facebook.com</h2>
+                    <h1>FACEBOOK</h1>
+                    <h2>www.facebook.com:443</h2>
                 </div>
                 <div class="img">
                     <a href="https://www.facebook.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
@@ -53,17 +73,53 @@
             </div>
             <div class="flex-box" style="border: 3px solid green;">
                 <div class="title">
-                    <h1>YouTube</h1>
-                    <h2>www.youtube.com</h2>
+                    <h1>YOUTUBE</h1>
+                    <h2>www.youtube.com:443</h2>
                 </div>
                 <div class="img">
                     <a href="https://www.youtube.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
                 </div>
             </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>GATEWAY</h1>
+                    <h2>192.168.100.1:80</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>NAS</h1>
+                    <h2>192.168.100.100:80</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>Gateway</h1>
-                    <h2>192.168.100.1</h2>
+                    <h1>CAMERA 01</h1>
+                    <h2>192.168.100.111:554</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>CAMERA 02</h1>
+                    <h2>192.168.100.112:554</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>CAMERA 03</h1>
+                    <h2>192.168.100.113:554</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -71,8 +127,26 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>Server</h1>
-                    <h2>192.168.100.100</h2>
+                    <h1>USER 01</h1>
+                    <h2>192.168.100.151:53601</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>USER 02</h1>
+                    <h2>192.168.100.152:53601</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>USER 03</h1>
+                    <h2>192.168.100.153:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -80,8 +154,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>Camera 01</h1>
-                    <h2>192.168.100.111</h2>
+                    <h1>USER 04</h1>
+                    <h2>192.168.100.154:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -89,8 +163,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>Camera 02</h1>
-                    <h2>192.168.100.112</h2>
+                    <h1>USER 05</h1>
+                    <h2>192.168.100.155:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -98,8 +172,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>Camera 03</h1>
-                    <h2>192.168.100.113</h2>
+                    <h1>USER 06</h1>
+                    <h2>192.168.100.156:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -107,8 +181,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>User 01</h1>
-                    <h2>192.168.100.151</h2>
+                    <h1>USER 07</h1>
+                    <h2>192.168.100.157:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -116,8 +190,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>User 02</h1>
-                    <h2>192.168.100.152</h2>
+                    <h1>USER 08</h1>
+                    <h2>192.168.100.158:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -125,8 +199,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>User 03</h1>
-                    <h2>192.168.100.153</h2>
+                    <h1>USER 09</h1>
+                    <h2>192.168.100.159:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -134,8 +208,26 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>User 04</h1>
-                    <h2>192.168.100.154</h2>
+                    <h1>USER 10</h1>
+                    <h2>192.168.100.160:8080</h2>
+                </div>
+                <div class="img">
+                    <img src="./img/down.webp" alt="down">
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid green;">
+                <div class="title">
+                    <h1>USER 11</h1>
+                    <h2>192.168.100.161:8080</h2>
+                </div>
+                <div class="img">
+                    <a href="https://www.google.com" target="_blank"><img src="./img/up.webp" alt="up"></a>
+                </div>
+            </div>
+            <div class="flex-box" style="border: 3px solid red;">
+                <div class="title">
+                    <h1>USER 12</h1>
+                    <h2>192.168.100.162:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -143,89 +235,8 @@
             </div>
             <div class="flex-box" style="border: 3px solid red;">
                 <div class="title">
-                    <h1>User 05</h1>
-                    <h2>192.168.100.155</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 06</h1>
-                    <h2>192.168.100.156</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 07</h1>
-                    <h2>192.168.100.157</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 08</h1>
-                    <h2>192.168.100.158</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 09</h1>
-                    <h2>192.168.100.159</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 10</h1>
-                    <h2>192.168.100.160</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 11</h1>
-                    <h2>192.168.100.161</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 12</h1>
-                    <h2>192.168.100.162</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 13</h1>
-                    <h2>192.168.100.163</h2>
-                </div>
-                <div class="img">
-                    <img src="./img/down.webp" alt="down">
-                </div>
-            </div>
-            <div class="flex-box" style="border: 3px solid red;">
-                <div class="title">
-                    <h1>User 14</h1>
-                    <h2>192.168.100.164</h2>
+                    <h1>USER 13</h1>
+                    <h2>192.168.100.163:8080</h2>
                 </div>
                 <div class="img">
                     <img src="./img/down.webp" alt="down">
@@ -240,15 +251,6 @@
                     <a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank"><img src="./img/up.webp" alt="up"></a>
                 </div>
             </div>
-        </div>
-        <button id="floating-button">MENU</button>
-        <div class="floating-menu">
-          <ul>
-            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">BUY</a></li>
-            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">DATABASE</a></li>
-            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">SETTINGS</a></li>
-            <li><a href="https://jhonatanlamina.com/tienda/herramienta-de-monitoreo-de-red/" target="_blank">ABOUT</a></li>
-          </ul>
         </div>
         <div class="hide_background" id="hide_background" onclick="close_popup()"></div>
         <div id="msg_popup" class="msg_popup">

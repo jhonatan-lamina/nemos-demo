@@ -3,18 +3,16 @@ function disable_right_click(event) {
     event.preventDefault();
 }
 document.addEventListener('contextmenu', disable_right_click);
-// floating menu actions
-document.addEventListener("DOMContentLoaded", function() {
-  const button = document.getElementById("floating-button");
-  const menu = document.querySelector(".floating-menu");
-  button.addEventListener("click", function() {
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
-  });
-  document.addEventListener("click", function(e) {
-    if (!menu.contains(e.target) && e.target !== button) {
-      menu.style.display = "none";
+// menu actions
+const menu_button = document.getElementById('menu_button');
+const menu = document.getElementById('menu');
+menu_button.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+window.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && event.target !== menu_button) {
+        menu.classList.remove('show');
     }
-  });
 });
 // open popup
 function open_popup() {

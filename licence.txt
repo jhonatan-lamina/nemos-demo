@@ -1,7 +1,7 @@
 >> LICENSE FOR ALL FILES WITHOUT ANY EXCEPTION <<
-Author: Jhonatan Lamina
-Web: www.sotepro.com
-Mail: jhonatan.lamina@sotepro.com
+Author: Jhonatan Lamiña
+Web: www.jhonatanlamina.com
+Mail: contacto@jhonatanlamina.com
 License Type: Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 
 Description:
