@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISP ROUTER - LOGIN</title>
+    <link rel="shortcut icon" href="../img/icon.webp">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #1f2633, #2c3446);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .login-card {
+            background: #2f384d;
+            width: 360px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+        .brand {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .brand h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .brand span {
+            font-size: 13px;
+            color: #9aa4b2;
+        }
+        .input-group {
+            margin-bottom: 18px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #44506a;
+            background: #1f2633;
+            color: #fff;
+            font-size: 14px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #4da3ff;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background: #4da3ff;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            background: #3391ff;
+        }
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #8c97a8;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="brand">
+                <h1>MIKR0TIK</h1>
+                <span>WebFig Login</span>
+            </div>
+            <form onsubmit="stop(event)">
+                <div class="input-group">
+                    <input type="text" placeholder="Login" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="footer">
+                © Mikr0Tik Router0S v7.x
+            </div>
+        </div>
+    </div>
+    <script>
+        function stop(event) {
+            event.preventDefault(); 
+            window.location.href = "about:blank";
+        }
+    </script>
+</body>
+</html>

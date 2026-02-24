@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DEVICE INFORMATION</title>
+    <link rel="shortcut icon" href="../img/icon.webp">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e2f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+        }
+        .card {
+            background: #2c2c3e;
+            padding: 30px;
+            border-radius: 12px;
+            width: 420px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            font-size: 14px;
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>DEVICE INFORMATION</h2>
+        <p><strong>Browser:</strong> <span id="browser"></span></p>
+        <p><strong>System:</strong> <span id="os"></span></p>
+        <p><strong>Resolution:</strong> <span id="resolution"></span></p>
+        <p><strong>Language:</strong> <span id="language"></span></p>
+        <p><strong>Time Zone:</strong> <span id="timezone"></span></p>
+        <p><strong>User Agent:</strong> <span id="useragent"></span></p>
+    </div>
+    <script>
+        document.getElementById("browser").textContent = navigator.appName;
+        document.getElementById("os").textContent = navigator.platform;
+        document.getElementById("resolution").textContent = screen.width + " x " + screen.height;
+        document.getElementById("language").textContent = navigator.language;
+        document.getElementById("timezone").textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        document.getElementById("useragent").textContent = navigator.userAgent;
+    </script>
+</body>
+</html>
