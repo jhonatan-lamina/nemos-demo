@@ -7,6 +7,52 @@
 body{
     background-color: #000000;
 }
+/* welcome*/
+#welcome-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+#welcome-screen * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#welcome-screen img {
+    margin-bottom: 20px;
+    animation: welcomeFadeIn 1s ease;
+}
+#welcome-screen h1 {
+    font-size: 28px;
+    color: #fff;
+    animation: welcomeFadeIn 1.5s ease;
+}
+#welcome-screen h2 {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #c2c2c2;
+    animation: welcomeFadeIn 1.5s ease;
+}
+#welcome-screen p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #c2c2c2;
+    animation: welcomeFadeIn 2s ease;
+}
+@keyframes welcomeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    } to {
+        opacity: 1; transform: translateY(0);
+    }
+}
 /* particles */
 body .particles-js{
     height: 100vh;
@@ -89,6 +135,30 @@ header span {
 }
 #menu.show {
     display: block;
+}
+#menu ul li.menu-select {
+    padding-bottom: 10px;
+}
+#menu ul li.menu-select label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+#menu ul li.menu-select select {
+    width: 160px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255,255,255,0.9);
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+#menu ul li.menu-select select:hover {
+    background-color: #ffffff;
 }
 /* main */
 main {
