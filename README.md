@@ -1,6 +1,6 @@
 # nemos-demo
-NEMOS DEMO v5.1
-Updated on: 18/02/2026
+NEMOS DEMO v6.0
+Updated on: 25/10/2026
 
 This is a demo version that does not have all the monitoring, security and configuration features.
 
