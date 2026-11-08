@@ -36,28 +36,6 @@ function close_popup() {
   document.getElementById("msg_popup").style.display = "none";
   document.getElementById("hide_background").style.display = "none";
 }
-// scanner type
-document.addEventListener("DOMContentLoaded", function () {
-    const selector = document.getElementById("mode-selector");
-    const devices = document.querySelectorAll(".container .flex-box .title h2");
-    devices.forEach(function (device) {device.dataset.port = device.textContent.trim();});
-    selector.addEventListener("change", function () {
-        const mode = selector.value;
-        devices.forEach(function (device) {
-            if (mode === "ping") {
-                const latency = device.dataset.latency;
-                if (latency && latency.trim() !== "") {
-                    device.textContent = latency;
-                } else {
-                    device.textContent = "OFFLINE";
-                }
-            } else {
-                device.textContent = device.dataset.port;
-            }
-        });
-        menu.classList.remove('show');
-    });
-});
 // particle configuration
 particlesJS({
 	"particles": {
